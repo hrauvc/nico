@@ -66,11 +66,16 @@
     negocio a las tres de la mañana, en domingo, sin cansarse.
   </p>
 
-  <!-- El widget ES la demostración. Mismo agente que hace las llamadas. -->
+  <!-- El widget ES la demostración. Mismo agente que hace las llamadas.
+       Ojo: se renderiza como burbuja flotante en la esquina, no aquí dentro.
+       Por eso el texto apunta a la esquina y no a un botón inexistente. -->
   <div class="card">
     <h2>🎙️ Pruébelo ahora mismo</h2>
-    <p>Presione el botón y háblele. Pregúntele lo que quiera, o póngaselo
-       difícil: aguanta.</p>
+    <p>Abajo a la derecha hay un botón que dice <b>Iniciar llamada</b>.
+       Presiónelo y hábleme. Pregúnteme lo que quiera, o póngamelo difícil.</p>
+    <p style="font-size:13px;margin-bottom:0">
+      Le va a pedir permiso del micrófono y aceptar los términos: es el aviso de
+      grabación estándar.</p>
     <elevenlabs-convai agent-id="agent_7101kyjc32h4fx2arykrn53g0np6"></elevenlabs-convai>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
   </div>
