@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innobox R&amp;R — El agente que le acaba de llamar</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Sí, era un agente de IA. Ahora háblele usted.">
+<meta property="og:description" content="La misma voz puede contestar el teléfono de su negocio las 24 horas.">
+<style>
+  :root{
+    --bg:#0c0d10; --surface:#15171c; --line:#242830; --fg:#f2f3f5;
+    --muted:#9aa2af; --accent:#4ade80; --accent-fg:#06240f;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#fbfbfc; --surface:#fff; --line:#e6e8ec; --fg:#12141a;
+           --muted:#5c6470; --accent:#16a34a; --accent-fg:#fff; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:560px;margin:0 auto;padding:32px 20px 64px}
+
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--surface);
+    border:1px solid var(--line);padding:6px 12px;border-radius:99px;
+    font-size:13px;color:var(--muted)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);
+    animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+  h1{font-size:clamp(28px,7vw,38px);line-height:1.15;letter-spacing:-.02em;
+    margin:20px 0 14px;font-weight:700}
+  h1 em{font-style:normal;color:var(--accent)}
+  .lead{color:var(--muted);font-size:17px;margin-bottom:26px}
+
+  .card{background:var(--surface);border:1px solid var(--line);
+    border-radius:16px;padding:22px;margin-bottom:16px}
+  .card h2{font-size:19px;margin-bottom:6px;letter-spacing:-.01em}
+  .card p{color:var(--muted);font-size:15px;margin-bottom:14px}
+
+  .stat{display:flex;gap:18px;margin:24px 0}
+  .stat div{flex:1}
+  .stat strong{display:block;font-size:24px;letter-spacing:-.02em}
+  .stat span{font-size:12px;color:var(--muted);line-height:1.35;display:block;margin-top:2px}
+
+  ul{list-style:none}
+  li{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+  li:last-child{border-bottom:0}
+  li b{color:var(--accent);flex:none;font-weight:600}
+
+  footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--muted);text-align:center}
+  footer b{color:var(--fg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <span class="badge"><span class="dot"></span> Innobox R&amp;R</span>
+
+  <h1>Sí, era un agente de IA.<br><em>Ahora háblele usted.</em></h1>
+
+  <p class="lead">
+    La voz que le acaba de llamar puede estar contestando el teléfono de su
+    negocio a las tres de la mañana, en domingo, sin cansarse.
+  </p>
+
+  <!-- El widget ES la demostración. Mismo agente que hace las llamadas. -->
+  <div class="card">
+    <h2>🎙️ Pruébelo ahora mismo</h2>
+    <p>Presione el botón y háblele. Pregúntele lo que quiera, o póngaselo
+       difícil: aguanta.</p>
+    <elevenlabs-convai agent-id="agent_7101kyjc32h4fx2arykrn53g0np6"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+  </div>
+
+  <div class="stat">
+    <div><strong>24/7</strong><span>Contesta siempre, al primer timbrazo</span></div>
+    <div><strong>∞</strong><span>Llamadas a la vez, sin cola</span></div>
+    <div><strong>&lt;1s</strong><span>En responder</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Qué hace por su negocio</h2>
+    <ul>
+      <li><b>→</b><span>Contesta y filtra: lo simple lo resuelve, lo que vale se lo pasa a usted</span></li>
+      <li><b>→</b><span>Agenda, reagenda y recuerda citas — se acaban los no-shows</span></li>
+      <li><b>→</b><span>Llama a sus prospectos en menos de un minuto, antes que su competencia</span></li>
+      <li><b>→</b><span>Le deja el resumen y la transcripción de cada llamada</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>¿Le interesa uno para su negocio?</h2>
+    <p>Dígaselo al agente aquí arriba: él toma sus datos y nosotros le
+       llamamos. O si prefiere, responda el mensaje que le acabamos de enviar.</p>
+  </div>
+
+  <footer>
+    <b>Innobox R&amp;R</b> · Automatización con inteligencia artificial<br>
+    Recibió esta llamada porque su negocio aparece en un directorio público.<br>
+    Responda <b>BAJA</b> al mensaje y no lo volvemos a contactar.
+  </footer>
+
+</div>
+</body>
+</html>
