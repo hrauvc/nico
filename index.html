@@ -77,16 +77,18 @@
       Le va a pedir permiso del micrófono y aceptar los términos: es el aviso de
       grabación estándar.</p>
     <!--
-      Las dynamic-variables son OBLIGATORIAS. El prompt usa doce {{variables}}
-      que en una llamada las inyecta el sistema; aquí no las manda nadie y la
-      conversación falla con "Conversation initialization failed" —
-      ni por voz ni por texto.
-      Los valores por defecto del agente son solo para la vista previa del
-      panel, no aplican al widget público.
+      Agente "Nico - Web", DISTINTO al de telefonía. El de teléfono saludaba con
+      "¿Hablo a su negocio?", que aquí no tiene sentido: nadie está llamando a
+      nadie y quien entra ya sabe quién es Nico.
+
+      Las dynamic-variables siguen siendo obligatorias aunque este guion use
+      pocas: sin ellas la conversación muere con "Conversation initialization
+      failed", en voz y en texto. Los valores por defecto del agente aplican
+      solo a la vista previa del panel, no al widget público.
     -->
     <elevenlabs-convai
-      agent-id="agent_7101kyjc32h4fx2arykrn53g0np6"
-      dynamic-variables='{"company_name":"Innobox R&amp;R","whatsapp_sender_name":"Innobox R&amp;R","business_name":"su negocio","contact_name":"","decision_maker_role":"el dueño","vertical":"","city":"","pain_hook":"las llamadas que se pierden cuando nadie alcanza a contestar","qualifying_question":"En un día normal, ¿cuántas llamadas se quedan sin contestar?","price_from":"dos mil pesos","callback_context":"","gatekeeper_name":""}'
+      agent-id="agent_4701kynjp6zmfy694e6yyma72cgk"
+      dynamic-variables='{"company_name":"Innobox R&amp;R","price_from":"dos mil pesos"}'
     ></elevenlabs-convai>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
   </div>
